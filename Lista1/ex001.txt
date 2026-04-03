@@ -1,0 +1,40 @@
+1) Indique Verdadeiro ou Falso
+
+a) Uma variável é uma posição na memória do computador que pode receber diversos valores ao longo da execução do programa.
+Verdadeiro. A variável serve para armazenar valores e, como o próprio nome já diz, seu valor pode ser modificado ao longo da execução.
+
+
+b) Uma mesma variável pode receber diferentes tipos de valores (alfanuméricos, numéricos, lógicos) durante a execução do programa.
+Verdadeiro. Python é uma linguagem com tipagem dinâmica. Logo, se A = 1, a ela também poderá ser atribuída a String "Um" em seguida.
+
+
+c) Variáveis de tipos diferentes podem ser usadas para troca de valores, com uso de conversão de tipos.
+Verdadeiro. É possível trocar os valores (em Python) de, por exemplo, o float A = 3.14 com B = float(A).
+
+
+d) Cada variável utilizada pode ser acessada em qualquer parte do programa.
+Falso. A variável utilizada só poderá ser acessada se estiver dentro do mesmo escopo a qual foi definida.
+
+
+e) Não é permitido utilizar duas variáveis com o mesmo nome.
+Verdadeiro. Um nome de variável aponta para um único endereço de memória. Se instanciar uma variável de mesmo nome, ambas irão retornar o mesmo valor (No caso, a segunda instância iria se sobrepor).
+
+
+f) A operação aritmética soma é a única com o mesmo nível de precedência da multiplicação.
+Falso. A operação aritmética soma possui o mesmo nível de precedência da subtração, e não da multiplicação.
+
+
+g) Quando uma expressão aritmética apresenta parênteses aninhados, sempre o conjunto mais interno é avaliado primeiro.
+Verdadeiro. Uma expressão aritmética em código funciona de forma semelhante à matemática convencional.
+
+
+h) Os comentários permitem que o texto após o caractere ‘#’seja impresso na tela.
+Falso. O programa sempre irá ignorar a linha que inicie com o caractere "#" ou o que vier após, se estiver na mesma linha de um código, por exemplo.
+
+
+i) Duas variáveis definidas como “teste” e “Teste” são consideradas como idênticas.
+Falso. Python é Case-Sensitive. Portanto, há a diferenciação entre maiúsculas e minúsculas.
+
+
+j) Os operadores ( * + - / ) tem todos a mesma precedência.
+Falso. Em primeiro lugar, são efetuadas as operações (* /). Em seguida, (+ -).

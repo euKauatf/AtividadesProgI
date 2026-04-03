@@ -1,0 +1,25 @@
+2) Analise o programa abaixo e, para cada uma das saídas (comandos print), detalhe passo a
+passo como o Python (segundo suas prioridades) resolveria as equações e o resultado final
+obtido.
+x = 2
+y = 3
+z = 0.5
+print(x + x * x ** (y * x) / z)
+print(not x + z < y or x + x * z >= y and True)
+
+
+No primeiro print, (y * x) será efetuado primeiro, por estar dentro de (), demonstrando prioridade. 
+Em seguida, ( x ** ) será efetuado, por ser de uma grandeza maior - potência.
+O (x * ) será efetuado, porque, por mais que tenha a mesma precedência de ( / ), ele vem primeiro, da esquerda para a direita.
+Agora sim, ( / z) será feito e, por fim
+(x + ) finaliza a equação.
+Resultado: 258.0
+
+No segundo print, as primeiras coisas a serem feitas são as operações. Neste caso, (x + z).
+Em seguida, é efetuado (x * z) e depois (x + )
+Com essas operações feitas, agora os operadores (< > >= <=) serão analisados. No print, o primeiro é ( < y).
+Depois, resta apenas o >= y.
+Com isso feito, temos, dentro do print, a seguinte expressão. (not True or True and True).
+A comparação inicial será feita com o not, que mudará o True para False. Entretanto, True and True retornará True
+O final seria (False or True). Como há uma expressão verdadeira em (or), o resultado em também será verdadeiro.
+Resultado: True
